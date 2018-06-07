@@ -1,10 +1,7 @@
-/* ======================== */
-/*   Syed Sahar Ali Raza   	*/
-/* ========================	*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-body{background-color:#eee;}
+
 
 #generic_price_table{
 	background-color: #f0eded;
@@ -77,7 +74,7 @@ body{background-color:#eee;}
 	color: #fff;
 } 
 #generic_price_table{
-	margin: 50px 0 50px 0;
+	padding: 50px 0 50px 0;
     font-family: 'Raleway', sans-serif;
 }
 .row .table{
