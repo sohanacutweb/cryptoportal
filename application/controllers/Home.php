@@ -28,9 +28,16 @@ class Home extends CI_Controller{
 		$data['sliderImages'] = $this->home_model->getSliderImages(1); */
 		$data['title'] = 'Home Page';
 		$this->load->view('frontend/layouts/header',$data);
-		$this->load->view('frontend/home', $data);
+		$this->load->view('frontend/blocks/home', $data);
 		$this->load->view('frontend/layouts/footer',$data);
 
 	}
-
+    
+    public function pricing()
+    {
+    	$data['title'] = 'Pricing Page';
+    	$this->load->view('frontend/layouts/header',$data);
+    	$this->load->view('frontend/blocks/pricing',$data);
+    	$this->load->view('frontend/layouts/footer',$data);
+    }
 	}

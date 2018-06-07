@@ -28,6 +28,7 @@
 			<!--<link rel="stylesheet" href="<?php echo base_url();?>assets/frontend/css/jquery.DonutWidget.min.css" />-->
 			<link rel="stylesheet" href="<?php echo base_url();?>assets/frontend/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?php echo base_url();?>assets/frontend/css/main.css">
+			<link rel="stylesheet" href="<?php echo base_url();?>assets/frontend/css/style.css">
 		</head>
 		<body>
 
@@ -49,7 +50,7 @@
 								<li><a href="#project">project</a></li>
 								<li><a href="#blog">blog</a></li>
 								<li><a href="#team">team</a></li>
-								<li><a href="">pricing</a></li>
+								<li><a href="<?php echo base_url(); ?>home/pricing">pricing</a></li>
 							   <!-- Dropdown -->
 							    <li class="dropdown">
 							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
