@@ -49,6 +49,7 @@
 								<li><a href="#project">project</a></li>
 								<li><a href="#blog">blog</a></li>
 								<li><a href="#team">team</a></li>
+								<li><a href="">pricing</a></li>
 							   <!-- Dropdown -->
 							    <li class="dropdown">
 							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
