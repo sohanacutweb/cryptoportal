@@ -509,6 +509,10 @@ a.dashboard:hover{
 .return-alert a:hover {
     color: #f8f6ff;
 }
+.dropdown.form-control {
+    padding: 0 10px;
+    height: 55px !important;
+}
 /*END LOGIN REGISTER*/
 /*START THANKYOU*/
 .thankyou.col-lg-12.text-center {

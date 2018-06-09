@@ -70,7 +70,7 @@ if($this->session->userdata('logged_in')){
     <div class="billing_details col-lg-6">
       <h2>Billing Details</h2>
       <div class="form-group">
-        <input type="text" name="country" class="form-control" id="country" placeholder="Country *" value="<?=set_value('country')?>">
+        <?= country_dropdown('country', 'cont', 'dropdown form-control', 'GB', array('US','CA','GB'), ''); ?>
       </div>
       <div class="form-group">
         <input type="text" name="address" class="form-control" id="address" placeholder="Address *" value="<?=set_value('address')?>">

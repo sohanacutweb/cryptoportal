@@ -12,6 +12,8 @@ Class User extends CI_Controller {
 		//$this->load->model('login_database');
 		// Load User model
         $this->load->model('users');
+        //load helper country
+        $this->load->helper('country');
 	}
 	// Show login page
 	public function index() {
