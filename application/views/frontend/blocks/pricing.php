@@ -64,7 +64,7 @@
                         
                         <!--BUTTON START-->
                         <div class="generic_price_btn clearfix">
-                          <a class="" href="">Sign up</a>
+                          <a class="" href="<?php echo base_url('user/register/1'); ?>">Sign up</a>
                         </div>
                         <!--//BUTTON END-->
                         
@@ -122,7 +122,7 @@
                         
                         <!--BUTTON START-->
                         <div class="generic_price_btn clearfix">
-                          <a class="" href="">Sign up</a>
+                          <a class="" href="<?php echo base_url('user/register/2'); ?>">Sign up</a>
                         </div>
                         <!--//BUTTON END-->
                         
@@ -179,7 +179,7 @@
                         
                         <!--BUTTON START-->
                         <div class="generic_price_btn clearfix">
-                          <a class="" href="">Sign up</a>
+                          <a class="" href="<?php echo base_url('user/register/3'); ?>">Sign up</a>
                         </div>
                         <!--//BUTTON END-->
                         

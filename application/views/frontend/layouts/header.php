@@ -36,7 +36,7 @@
 			<header class="default-header">
 				<nav class="navbar navbar-expand-lg  navbar-light">
 					<div class="container">
-						  <a class="navbar-brand" href="index.html">
+						  <a class="navbar-brand" href="<?php echo base_url(); ?>">
 						  	<img src="<?php echo base_url();?>assets/img/logo.png" alt="">
 						  </a>
 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,14 +45,24 @@
 
 						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
 						    <ul class="navbar-nav">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#project">project</a></li>
-								<li><a href="#blog">blog</a></li>
-								<li><a href="#team">team</a></li>
-								<li><a href="<?php echo base_url(); ?>home/pricing">pricing</a></li>
+								<li><a href="<?php echo base_url(); ?>#home">Home</a></li>
+								<li><a href="<?php echo base_url(); ?>#service">Service</a></li>
+								<li><a href="<?php echo base_url(); ?>#project">project</a></li>
+								<li><a href="<?php echo base_url(); ?>#blog">blog</a></li>
+								<li><a href="<?php echo base_url(); ?>#team">team</a></li>
+								<li><a href="<?php echo base_url(); ?>pricing">pricing</a></li>
+								<?php if($this->session->userdata('logged_in')){ ?>
+								<li><a href="<?php echo base_url(); ?>admin" class="dashboard">Dashboard</a></li>
+							    <?php }else{ ?>
+							    <li><a href="<?php echo base_url(); ?>pricing">sign up</a></li>
+								<?php } ?>
+								<?php if($this->session->userdata('logged_in')){ ?>
+								<li><a href="<?php echo base_url(); ?>user/logout">log out</a></li>
+							    <?php }else{ ?>
+                                <li><a href="<?php echo base_url(); ?>user">log in</a></li>
+							    <?php } ?>
 							   <!-- Dropdown -->
-							    <li class="dropdown">
+							    <!--<li class="dropdown">
 							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 							        Pages
 							      </a>
@@ -60,7 +70,7 @@
 							        <a class="dropdown-item" href="generic.html">Generic</a>
 							        <a class="dropdown-item" href="elements.html">Elements</a>
 							      </div>
-							    </li>									
+							    </li>-->								
 						    </ul>
 						  </div>						
 					</div>

@@ -10,6 +10,8 @@ class Home extends CI_Controller{
 		//$this->load->model('forum_model');
 		//$this->load->library('pagination');
 		$this->load->helper('cookie');
+		// Load session library
+		$this->load->library('session');
 
 	}
 	public function index()
@@ -32,12 +34,4 @@ class Home extends CI_Controller{
 		$this->load->view('frontend/layouts/footer',$data);
 
 	}
-    
-    public function pricing()
-    {
-    	$data['title'] = 'Pricing Page';
-    	$this->load->view('frontend/layouts/header',$data);
-    	$this->load->view('frontend/blocks/pricing',$data);
-    	$this->load->view('frontend/layouts/footer',$data);
-    }
 	}
